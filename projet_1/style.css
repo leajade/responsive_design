@@ -1,0 +1,508 @@
+html {
+    font-size: 100%;
+}
+.container {
+    width:100;
+}
+
+body {
+    font-size: 100%
+}
+
+h2,
+.h2 {
+    font-size: 1.2rem !important;
+    font-family: 'Roboto', sans-serif;
+}
+
+h3,
+.h3 {
+    color: #088776;
+    font-size: 0.75rem !important;
+    font-family: 'Roboto', sans-serif;
+}
+
+h5,
+.h5 {
+    color: #fff;
+    font-size: 2rem !important;
+    font-family: 'Roboto', sans-serif;
+}
+.greentxt {
+    color: #088776;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 1.5rem;
+    ;
+}
+
+.ligthWriting {
+    font-weight: lighter;
+    color: #000;
+}
+
+.greenButton {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 25px;
+    background-color: #088776;
+}
+
+.whiteButton {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: transparent;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+}
+
+.whiteButtonGreeen {
+    border: 1px 1;
+    border-color: #088776;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #088776;
+    text-shadow: 1px 1px 1px #088776;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+}
+
+.greenButtonBorderWhite {
+    border: 0 1;
+    border-color: #fff;
+    font-size: 1rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 25px;
+    background-color: #088776;
+}
+
+:root {
+    --gutter: 20px;
+}
+
+.app>* {
+    grid-column: 2 / -2;
+}
+
+.app>.full {
+    grid-column: 1 / -1;
+}
+
+.hs {
+    display: grid;
+    grid-gap: calc(var(--gutter) / 2);
+    grid-template-columns: 10px repeat(var(--total), calc(50% - var(--gutter) * 2)) 10px;
+    grid-template-rows: minmax(150px, 1fr);
+
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+    padding-bottom: calc(.75 * var(--gutter));
+    margin-bottom: calc(-.25 * var(--gutter));
+}
+
+.hs:before,
+.hs:after {
+    content: '';
+}
+
+.entete {
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (min-width: 420px) and (max-width:779px){
+   .app {
+       padding-top: 5%;
+   }
+   .carousel-fade .carousel-item, .carousel-item img  {
+       max-width: 400px;
+        height: 500px;
+    }
+    .makeUsSpecial { 
+        padding-top: 15%;
+    }
+    .image {display:none;}
+    .CozyPlaces {
+        padding-top: 15%;
+    }
+    .card-img-top {
+        width:125% !important;
+    }
+    .bouton1 {display: none;}
+    .bouton2 {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 15%;
+    }
+    .exclusiveArchitecture {
+        display: inline-flex;
+        justify-content: space-evenly;
+    }
+    .moreInspiration {
+        padding-top: 15%;
+    }
+    .table tr {
+        display: block;
+    }
+    .table td {
+        display: block;
+    }
+    .GetListedToday {
+        background-color: #f8f8f8;
+        margin-top: 5%;
+        display: flex;
+        text-align: center;
+    }
+    .glt {
+        display: inline-block;
+        padding: 50px;
+        text-align: center;
+    } 
+    .image1 {
+        display: none;
+    }
+    .LatestArticles {
+        margin-top: 15%;
+    }
+    #imageLa {
+        width: 100% !important;
+    }
+    .greenFooter {
+        margin-top: 5%;
+        padding-top: 5%;
+        padding-left: 5%;
+        background-color: #088776;
+        display: inline-block;
+    } 
+    .head {
+        display: inline-block;
+        justify-content: center;
+    }
+    .signup {
+        padding-bottom: 5%;
+        padding-right: 5%;
+    }
+    .XXLScreen {display: none;}
+    .tete img{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        width: 50% !important;
+    }
+    .tete {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .right{
+        display: flex;
+        flex-flow: row wrap;
+        align-content: space-between;
+        justify-content: space-between;
+      }
+      .list {
+        width: 40%;
+      }
+      .right::before, .right::after {
+        content: '';
+        width: 100%;
+        order: 1;
+      }
+      .list:nth-child(n + 1) {
+        order: 1;
+      }
+    .reseau {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        display: flex;
+        justify-content: center;
+    }
+    .reseau img {
+        margin-right: 2%;
+    }
+    .droits {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 5%;
+    }    
+}
+
+@media screen and (min-width: 780px) and (max-width: 1359px) {
+    .makeUsSpecial {
+        display: flex;
+    }
+    .tableRow {
+        display: flex;
+    }
+    .colomn {
+        justify-content: space-between;
+    }
+    .columns {
+        justify-content: space-between;
+        width: 30rem;
+    }
+    .wmus {
+        width: 100%;
+    }
+    .image {
+        display: none;
+    }
+    .CozyPlaces {
+        padding-top: 5%;
+    }
+    .cp {
+        width: 100%;
+    }
+    .bouton1 {
+        display: none;
+    }
+    .bouton2 {
+        display: flex;
+        justify-content: center;
+    }
+    .getInspired {
+        padding-top: 10%;
+    }
+    .moreInspiration {
+        padding-top: 5%;
+    }
+    .app {
+        padding: var(--gutter) 0;
+        display: grid;
+        grid-gap: var(--gutter) 0;
+        grid-template-columns: var(--gutter) 1fr var(--gutter);
+        align-content: start;
+        padding-top: 10%;
+    }
+    .tableRows {
+        display: flex;
+        justify-content: space-between;
+    }
+    .table tr {
+        display: block;
+    }
+    .table td {
+        display: block;
+    }
+    .GetListedToday {
+        background-color: #f8f8f8;
+        margin-top: 5%;
+        display: flex;
+        text-align: center;
+    }
+    .glt {
+        display: inline-block;
+        padding: 50px;
+        text-align: center;
+    } 
+    .image1 {
+        display: none;
+    }
+    .LatestArticles {
+        margin-top: 10%;
+    }
+    .la {
+        display: flex;
+        justify-content: space-between;
+    }
+    #laTablet {
+        display: none;
+    }
+    .greenFooter {
+        margin-top: 5%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        background-color: #088776;
+    }
+    .head {
+        display: flex;
+        justify-content: center;
+    }
+    .signup {
+        display: flex;
+        height: 2rem;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .XXLScreen {display: none;}
+    .tete img{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        width: 30%;
+    }
+    .tete {
+        padding-left: 5%;
+    }
+    .reseau {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        justify-content: center;
+        display: flex;
+    }
+    .reseau img {
+        margin-right: 2%;
+    }
+    .droits {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 5%;
+    }
+    #imageLa {
+        width: 95%;
+    }
+    .list {
+        padding-left: 5rem;
+    }
+}
+
+@media screen and (min-width: 1360px) {
+    .makeUsSpecial {
+        display: flex;
+    }
+    
+    .tableRow {
+        display: flex;
+    }
+    
+    .colomn {
+        justify-content: space-between;
+    }
+    
+    .columns {
+        justify-content: space-between;
+        width: 30rem;
+    }
+    .makeUsSpecial {
+        padding-bottom: 5%;
+    }
+    .wmus {
+        width: 55%;
+        padding-left: 5%;
+        padding-top: 10%;
+        padding-right: 5%;
+    }
+    .image {
+        width: 45%;
+        padding-top: 10%;
+        overflow:hidden;
+    }
+    .CozyPlaces {
+        display: flex;
+        padding-left: 5%;
+        padding-top: 2%;
+        background-color: #f8f8f8;
+    }
+    .cplaces {
+        width: 40%;
+    }
+    .bouton2 {
+        display: none;
+    }
+    .getInspired {
+        padding-left: 5%;
+        padding-top: 10%;
+    }
+    .moreInspiration {
+        padding-left: 5%;
+        padding-top: 5%;
+    }
+    .app {
+        padding: var(--gutter) 0;
+        display: grid;
+        grid-gap: var(--gutter) 0;
+        grid-template-columns: var(--gutter) 1fr var(--gutter);
+        align-content: start;
+        padding-left: 5%;
+        padding-top: 10%;
+    }
+    .tableRows {
+        display: flex;
+        justify-content: space-between;
+    }
+    .table {
+        padding-left: 10%;
+        width:60%;
+    }
+    .GetListedToday {
+        background-color: #f8f8f8;
+        margin-left: 5%;
+        margin-top: 10%;
+        display: flex;
+        text-align: center;
+        overflow: hidden
+    }
+    .glt {
+        display: inline-block;
+        padding: 150px;
+        text-align: left;
+    }
+    .LatestArticles {
+        margin-top: 10%;
+        margin-left: 5%;
+    }
+    .la {
+        display: flex;
+        justify-content: space-between;
+    }
+    .greenFooter {
+        margin-top: 5%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 5%;
+        background-color: #088776;
+        display: flex;
+        justify-content: space-around;
+    }
+    .signup {
+        display: flex;
+        height: 2rem;
+    }
+    .white {
+        height: 1rem;
+    }
+    .green {
+        background-color: #088776;
+        height: 2rem;
+    }
+    .MDScreen{display:none;}
+    .end {
+        display: flex;
+        margin: 5rem 5rem 5rem 5rem;
+        justify-content: space-around;
+    }
+    .tete {
+        width: 20rem;
+    }
+    .contact {
+        display: none;
+    }
+    .list {
+        padding-left: 5rem;
+    }
+}
+
+
+
+.right {
+    display: flex;
+}
+
+ul {
+    list-style: none;
+    justify-content: space-around;
+}
+
