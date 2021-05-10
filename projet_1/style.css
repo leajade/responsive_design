@@ -1,14 +1,7 @@
-html {
-    font-size: 100%;
-}
-.container {
-    width:100;
-}
-
 body {
-    font-size: 100%
+    background: #f8f8f8;
+    font-family: 'Roboto', sans-serif;
 }
-
 h2,
 .h2 {
     font-size: 1.2rem !important;
@@ -28,6 +21,7 @@ h5,
     font-size: 2rem !important;
     font-family: 'Roboto', sans-serif;
 }
+
 .greentxt {
     color: #088776;
 }
@@ -80,10 +74,8 @@ h5,
     background-color: rgb(255, 255, 255);
 }
 
-.greenButtonBorderWhite {
-    border: 0 1;
+#greenButtonBorderWhite {
     border-color: #fff;
-    font-size: 1rem;
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
@@ -122,387 +114,415 @@ h5,
     content: '';
 }
 
+.app {
+    padding: var(--gutter) 0;
+    display: grid;
+    grid-gap: var(--gutter) 0;
+    grid-template-columns: var(--gutter) 1fr var(--gutter);
+    align-content: start;
+    padding-top: 10%;
+}
+
 .entete {
     display: flex;
     justify-content: space-between;
 }
-@media screen and (min-width: 420px) and (max-width:779px){
-   .app {
-       padding-top: 5%;
-   }
-   .carousel-fade .carousel-item, .carousel-item img  {
-       max-width: 400px;
-        height: 500px;
-    }
-    .makeUsSpecial { 
-        padding-top: 15%;
-    }
-    .image {display:none;}
-    .CozyPlaces {
-        padding-top: 15%;
-    }
-    .card-img-top {
-        width:125% !important;
-    }
-    .bouton1 {display: none;}
-    .bouton2 {
-        display: flex;
-        justify-content: center;
-        padding-bottom: 15%;
-    }
-    .exclusiveArchitecture {
-        display: inline-flex;
-        justify-content: space-evenly;
-    }
-    .moreInspiration {
-        padding-top: 15%;
-    }
-    .table tr {
-        display: block;
-    }
-    .table td {
-        display: block;
-    }
-    .GetListedToday {
-        background-color: #f8f8f8;
-        margin-top: 5%;
-        display: flex;
-        text-align: center;
-    }
-    .glt {
-        display: inline-block;
-        padding: 50px;
-        text-align: center;
-    } 
-    .image1 {
-        display: none;
-    }
-    .LatestArticles {
-        margin-top: 15%;
-    }
-    #imageLa {
-        width: 100% !important;
-    }
-    .greenFooter {
-        margin-top: 5%;
-        padding-top: 5%;
-        padding-left: 5%;
-        background-color: #088776;
-        display: inline-block;
-    } 
-    .head {
-        display: inline-block;
-        justify-content: center;
-    }
-    .signup {
-        padding-bottom: 5%;
-        padding-right: 5%;
-    }
-    .XXLScreen {display: none;}
-    .tete img{
-        margin-top: 5%;
-        margin-bottom: 5%;
-        width: 50% !important;
-    }
-    .tete {
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-    .right{
-        display: flex;
-        flex-flow: row wrap;
-        align-content: space-between;
-        justify-content: space-between;
-      }
-      .list {
-        width: 40%;
-      }
-      .right::before, .right::after {
-        content: '';
-        width: 100%;
-        order: 1;
-      }
-      .list:nth-child(n + 1) {
-        order: 1;
-      }
-    .reseau {
-        padding-top: 5%;
-        padding-bottom: 5%;
-        display: flex;
-        justify-content: center;
-    }
-    .reseau img {
-        margin-right: 2%;
-    }
-    .droits {
-        display: flex;
-        justify-content: center;
-        padding-bottom: 5%;
-    }    
+.card-img {
+    padding-top: 5%;
 }
 
-@media screen and (min-width: 780px) and (max-width: 1359px) {
-    .makeUsSpecial {
-        display: flex;
-    }
-    .tableRow {
-        display: flex;
-    }
-    .colomn {
-        justify-content: space-between;
-    }
-    .columns {
-        justify-content: space-between;
-        width: 30rem;
-    }
-    .wmus {
-        width: 100%;
-    }
-    .image {
-        display: none;
-    }
-    .CozyPlaces {
-        padding-top: 5%;
-    }
-    .cp {
-        width: 100%;
-    }
-    .bouton1 {
-        display: none;
-    }
-    .bouton2 {
-        display: flex;
-        justify-content: center;
-    }
-    .getInspired {
-        padding-top: 10%;
-    }
-    .moreInspiration {
-        padding-top: 5%;
-    }
-    .app {
-        padding: var(--gutter) 0;
-        display: grid;
-        grid-gap: var(--gutter) 0;
-        grid-template-columns: var(--gutter) 1fr var(--gutter);
-        align-content: start;
-        padding-top: 10%;
-    }
-    .tableRows {
-        display: flex;
-        justify-content: space-between;
-    }
-    .table tr {
-        display: block;
-    }
-    .table td {
-        display: block;
-    }
-    .GetListedToday {
-        background-color: #f8f8f8;
-        margin-top: 5%;
-        display: flex;
-        text-align: center;
-    }
-    .glt {
-        display: inline-block;
-        padding: 50px;
-        text-align: center;
-    } 
-    .image1 {
-        display: none;
-    }
-    .LatestArticles {
-        margin-top: 10%;
-    }
-    .la {
-        display: flex;
-        justify-content: space-between;
-    }
-    #laTablet {
-        display: none;
-    }
-    .greenFooter {
-        margin-top: 5%;
-        padding-top: 5%;
-        padding-bottom: 5%;
-        background-color: #088776;
-    }
-    .head {
-        display: flex;
-        justify-content: center;
-    }
-    .signup {
-        display: flex;
-        height: 2rem;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-    .XXLScreen {display: none;}
-    .tete img{
-        margin-top: 5%;
-        margin-bottom: 5%;
-        width: 30%;
-    }
-    .tete {
-        padding-left: 5%;
-    }
-    .reseau {
-        padding-top: 5%;
-        padding-bottom: 5%;
-        justify-content: center;
-        display: flex;
-    }
-    .reseau img {
-        margin-right: 2%;
-    }
-    .droits {
-        display: flex;
-        justify-content: center;
-        padding-bottom: 5%;
-    }
-    #imageLa {
-        width: 95%;
-    }
-    .list {
-        padding-left: 5rem;
-    }
+.TextImg {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
 }
 
-@media screen and (min-width: 1360px) {
-    .makeUsSpecial {
-        display: flex;
-    }
-    
-    .tableRow {
-        display: flex;
-    }
-    
-    .colomn {
-        justify-content: space-between;
-    }
-    
-    .columns {
-        justify-content: space-between;
-        width: 30rem;
-    }
-    .makeUsSpecial {
-        padding-bottom: 5%;
-    }
-    .wmus {
-        width: 55%;
-        padding-left: 5%;
-        padding-top: 10%;
-        padding-right: 5%;
-    }
-    .image {
-        width: 45%;
-        padding-top: 10%;
-        overflow:hidden;
-    }
-    .CozyPlaces {
-        display: flex;
-        padding-left: 5%;
-        padding-top: 2%;
-        background-color: #f8f8f8;
-    }
-    .cplaces {
-        width: 40%;
-    }
-    .bouton2 {
-        display: none;
-    }
-    .getInspired {
-        padding-left: 5%;
-        padding-top: 10%;
-    }
-    .moreInspiration {
-        padding-left: 5%;
-        padding-top: 5%;
-    }
-    .app {
-        padding: var(--gutter) 0;
-        display: grid;
-        grid-gap: var(--gutter) 0;
-        grid-template-columns: var(--gutter) 1fr var(--gutter);
-        align-content: start;
-        padding-left: 5%;
-        padding-top: 10%;
-    }
-    .tableRows {
-        display: flex;
-        justify-content: space-between;
-    }
-    .table {
-        padding-left: 10%;
-        width:60%;
-    }
-    .GetListedToday {
-        background-color: #f8f8f8;
-        margin-left: 5%;
-        margin-top: 10%;
-        display: flex;
-        text-align: center;
-        overflow: hidden
-    }
-    .glt {
-        display: inline-block;
-        padding: 150px;
-        text-align: left;
-    }
-    .LatestArticles {
-        margin-top: 10%;
-        margin-left: 5%;
-    }
-    .la {
-        display: flex;
-        justify-content: space-between;
-    }
-    .greenFooter {
-        margin-top: 5%;
-        padding-top: 5%;
-        padding-bottom: 5%;
-        padding-left: 5%;
-        background-color: #088776;
-        display: flex;
-        justify-content: space-around;
-    }
-    .signup {
-        display: flex;
-        height: 2rem;
-    }
-    .white {
-        height: 1rem;
-    }
-    .green {
-        background-color: #088776;
-        height: 2rem;
-    }
-    .MDScreen{display:none;}
-    .end {
-        display: flex;
-        margin: 5rem 5rem 5rem 5rem;
-        justify-content: space-around;
-    }
-    .tete {
-        width: 20rem;
-    }
-    .contact {
-        display: none;
-    }
-    .list {
-        padding-left: 5rem;
-    }
+.makeUsSpecial {
+    padding-bottom: 10%;
 }
 
+.moreInspiration {
+    padding-top: 10%;
+}
 
+.GetListedToday {
+    background-color: #f8f8f8;
+}
 
-.right {
-    display: flex;
+.greenFooter {
+    background-color: #088776;
 }
 
 ul {
     list-style: none;
-    justify-content: space-around;
 }
 
+.carousel-item img {
+    object-fit: cover;
+    min-height: 600px;
+}
+.carousel-inner {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.carousel-caption {
+    position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+@media screen and (min-width: 1200px) {
+    .makeUsSpecial {
+        display: flex;
+        padding-top: 10%;
+        padding-left: 10%;
+        overflow: hidden;
+    }
+
+    .CozyPlaces {
+        display: flex;
+        padding: 10% 10% 10% 10%;
+        justify-content: space-between;
+        background-image: url(./images/image-cozyplaces.webp);
+        background-size: 100%;
+    }
+
+    .getInspired {
+        padding-top: 10%;
+    }
+
+    .app {
+        padding-left: 10%;
+    }
+
+    .moreInspiration {
+        padding-top: 5%;
+    }
+
+    .GetListedToday {
+        margin-top: 10%;
+        display: flex;
+        overflow: hidden;
+    }
+
+    .glt {
+        padding: 10% 10% 10% 10%;
+    }
+
+    .LatestArticles {
+        margin-top: 10%;
+    }
+
+    .la {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .greenFooter {
+        margin-top: 5%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 10%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .neverMiss {
+        padding-right: 5%;
+    }
+
+    .form-inline {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 10%;
+    }
+
+    .white {
+        height: 3rem;
+    }
+
+    .green {
+        background-color: #088776;
+        height: 2rem;
+    }
+
+    .endLists {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15%;
+    }
+
+    .endLogo img {
+        width: 70%;
+        padding-bottom: 10%;
+    }
+
+    .end {
+        display: flex;
+        justify-content: space-around;
+        padding: 5% 10% 10% 10%;
+    }
+
+    #imageLa {
+        width: 32%;
+    }
+    
+    #disapearLg {
+        display: none;
+    }
+   
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .app {
+        padding-left: 2%;
+    }
+
+    .makeUsSpecial {
+        padding-top: 10%;
+        padding-left: 2%;
+    }
+
+    .CozyPlaces {
+        padding-left: 2%;
+        background-image: url(./images/image-cozyplaces.webp);
+        background-size: 100%;
+        padding-bottom: 15%;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+    }
+
+    .getInspired {
+        padding-top: 10%;
+        padding-left: 2%;
+    }
+
+    #gi-image {
+        height: 100%;
+    }
+
+    .bouton2 {
+        padding-top: 5%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .moreInspiration {
+        padding-top: 10%;
+        padding-left: 2%;
+        padding-bottom: 10%
+    }
+
+    .table tr {
+        display: block;
+    }
+
+    .table td {
+        display: block;
+    }
+
+
+    .GetListedToday {
+        padding: 10% 2% 10% 2%;
+        text-align: center;
+    }
+
+    .LatestArticles {
+        margin-top: 10%;
+        padding-left: 2%;
+        padding-bottom: 10%;
+        ;
+    }
+
+    .la {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #imageLa {
+        width: 48%;
+    }
+
+    .greenFooter {
+        padding-top: 5%;
+        padding-bottom: 5%;
+
+    }
+
+    .neverMiss {
+        text-align: center;
+        padding-bottom: 5%;
+    }
+
+    .form-inline {
+        display: flex;
+        justify-content: space-evenly;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .endLogo img {
+        width: 30%;
+        padding-bottom: 5%;
+    }
+
+    .endLogo {
+        padding-bottom: 5%;
+        padding-left: 2%;
+    }
+
+    .endLists {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 5%;
+    }
+
+    .contact {
+        text-align: center;
+        padding-bottom: 5%;
+    }
+
+    .reseau {
+        padding: 2% 40% 5% 40%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .reseau img {
+        width: 7%;
+    }
+
+    #disapearMd {
+        display: none;
+    }
+    #disapearOnlyMd {
+        display: none;
+    }
+    #disapearMd {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .app {
+        padding-bottom: 20%;
+    }
+    .cp {
+        padding-bottom: 10%;
+    }
+    .CozyPlaces {
+        background-image: url(./images/image-cozyplaces.webp);
+        background-size: 100%;
+        padding-bottom: 25%;
+        margin-bottom: 10%;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+    }
+    .bouton2 {
+        padding-top: 10%;
+        text-align: center;
+    }
+
+    .moreInspiration {
+        padding-top: 10%;
+        padding-left: 2%;
+        padding-bottom: 10%
+    }
+
+    .table tr {
+        display: block;
+    }
+
+    .table td {
+        display: block;
+    }
+
+
+    .GetListedToday{
+        padding:10% 5% 10% 5%;
+        text-align: center;
+    }
+    .greenButton {
+        margin-right: 5%;
+    }
+    .greenFooter {
+        padding:10% 5% 10% 5%;
+        text-align: center;
+    }
+    .form-inline {
+        padding-top: 5%;
+    }
+    .form-control {
+        width: 100% !important;
+    }
+    .gbBouton{
+        display: flex;
+        justify-content: center;
+    }
+    #greenButtonBorderWhite {
+        width: 30% !important;
+    }
+
+
+
+
+    .endLogo img {
+        width:50%;
+        padding-bottom: 5%;
+    }
+
+    .endLogo {
+        padding-left: 5%;
+    }
+
+    .endLists {
+        display: flex;
+        flex-flow: row wrap;
+        align-content: space-between;
+        justify-content: space-between;
+        padding-bottom: 5%;
+        padding-top: 5%;
+    }
+
+    .list {
+        width: 40%;
+        padding-bottom: 5%;
+    }
+
+    .right::before,
+    .right::after {
+        content: '';
+        width: 100%;
+        order: 1;
+    }
+
+    .list:nth-child(n + 1) {
+        order: 1;
+    }
+
+    .contact {
+        text-align: center;
+        padding-bottom: 5%;
+    }
+
+    .reseau {
+        padding: 2% 35% 5% 35%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .reseau img {
+        width: 10%;
+    }
+
+    #disapearMd {
+        display: none;
+    }
+    
+}
